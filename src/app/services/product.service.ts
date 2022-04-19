@@ -7,7 +7,7 @@ import { Product } from '../models/product';
   providedIn: 'root',
 })
 export class ProductService {
-  private baseUrl = 'http://localhost:3000/products';
+  private baseUrl = 'http://localhost:3000/products/';
   private httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json',

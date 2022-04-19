@@ -8,7 +8,7 @@
   &nbsp;
   <button type="submit" class="btn btn-info">Tìm kiếm</button>
 </form>
-<button mat-raised-button (click)="openDialog()">Pick one</button>
+<button mat-raised-button color="warn" (click)="openDialog()">Thêm mới</button>
 
 <div class="container">
   <table class="table table-hover">
@@ -30,7 +30,7 @@
         <td>{{ p.sale_price }}</td>
         <td>{{ p.image }}</td>
         <td>
-          <button class="btn btn-info">Chi tiết</button>&nbsp;
+          <a class="btn btn-info" routerLink="/products/{{p.id}}">Chi tiết</a>&nbsp;
           <button class="btn btn-warning">Sửa</button>&nbsp;
           <button class="btn btn-danger">Xóa</button>
         </td>

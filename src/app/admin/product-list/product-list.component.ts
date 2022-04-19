@@ -18,7 +18,7 @@ export class ProductListComponent implements OnInit {
   }
   openDialog(): void {
     const dialogRef = this.dialog.open(ProductCreateComponent, {
-      width: '250px',
+      width: '700px',
     });
 
     dialogRef.afterClosed().subscribe(result => {
