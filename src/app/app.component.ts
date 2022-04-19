@@ -1,5 +1,4 @@
-import { Observable } from 'rxjs';
-import { Store } from '@ngrx/store';
+
 import { Component } from '@angular/core';
 
 @Component({

@@ -1,9 +1,39 @@
 {
-  "posts": [
+  "products": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "name": "van tien1",
+      "price": 200000,
+      "sale_price" : 100000,
+      "image": "vad"
+    },
+    {
+      "id": 2,
+      "name": "van tien2",
+      "price": 200000,
+      "sale_price" : 100000,
+      "image": "vad"
+    },
+    {
+      "id": 3,
+      "name": "van tien3",
+      "price": 200000,
+      "sale_price" : 100000,
+      "image": "vad"
+    },
+    {
+      "id": 4,
+      "name": "van tien4",
+      "price": 200000,
+      "sale_price" : 100000,
+      "image": "vad"
+    },
+    {
+      "id": 5,
+      "name": "van tien5",
+      "price": 200000,
+      "sale_price" : 100000,
+      "image": "vad"
     }
   ]
 }
