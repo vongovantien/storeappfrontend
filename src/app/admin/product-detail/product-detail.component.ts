@@ -12,9 +12,10 @@ import { HttpResponse } from '@angular/common/http';
 export class ProductDetailComponent implements OnInit {
   id: number = 0;
   product: Product = {
+    id: 0,
     name: '',
     price: 0,
-    price_sale: 0,
+    sale_price: 0,
     image: ''
   }
   constructor(private productService: ProductService, private _route: ActivatedRoute) { }

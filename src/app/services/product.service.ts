@@ -1,18 +1,25 @@
 import { Observable } from 'rxjs';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable, OnInit } from '@angular/core';
 import { Product } from '../models/product';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ProductService {
+  private baseUrl = 'http://localhost:3000/products';
+  private httpOptions = {
+    headers: new HttpHeaders({
+      'Content-Type': 'application/json',
+    }),
+  };
+  constructor(private http: HttpClient) {}
 
-  baseUrl = "http://localhost:3000/products"
-  constructor(private http: HttpClient) { }
-
+  getAll(): Observable<any> {
+    return this.http.get<any>(this.baseUrl);
+  }
   create(data: any): Observable<any> {
-    return this.http.post<any>(this.baseUrl, data);
+    return this.http.post<any>(this.baseUrl, data, this.httpOptions);
   }
 
   getOne(id: number): Observable<any> {
