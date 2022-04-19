@@ -7,15 +7,15 @@ import { ProductEditComponent } from './admin/product-edit/product-edit.componen
 import { AboutComponent } from './pages/about/about.component';
 
 const routes: Routes = [{
-  path: "admin/:id",
+  path: "products/:id",
   component: ProductDetailComponent
 },
 {
-  path: "edit/:id",
+  path: "products/edit/:id",
   component: ProductEditComponent
 },
 {
-  path: "admin/create",
+  path: "products/create",
   component: ProductCreateComponent
 },
 {
